@@ -22,5 +22,16 @@
     <title>hexo+next+githubpage搭建个人博客</title>
     <url>/2023/10/05/hexo-next-githubpage%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>category/博客搭建</title>
+    <url>/2023/10/05/category-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
