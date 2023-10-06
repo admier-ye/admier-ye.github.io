@@ -6,15 +6,28 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-09-29T17:31:58.539Z</updated>
+  <updated>2023-10-05T12:54:49.521Z</updated>
   <id>http://example.com/</id>
   
   <author>
-    <name>y</name>
+    <name>小y</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo+next+githubpage搭建个人博客</title>
+    <link href="http://example.com/2023/10/05/hexo-next-githubpage%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/2023/10/05/hexo-next-githubpage%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2023-10-05T12:54:49.000Z</published>
+    <updated>2023-10-05T12:54:49.521Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
