@@ -36,4 +36,62 @@
 <p>目前文章略有草率，后续会陆续更新，可收藏关注哦！</p>
 <h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
   </entry>
+  <entry>
+    <title>http状态码介绍</title>
+    <url>/2023/10/17/python%E5%BC%80%E5%8F%91/</url>
+    <content><![CDATA[<p>1.一个http响应报文是由响应行，响应头，空行和响应体4个部分组成</p>
+<table>
+<thead>
+<tr>
+<th>http响应报文介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>响应行：</td>
+</tr>
+<tr>
+<td>响应头：</td>
+</tr>
+<tr>
+<td>空行：</td>
+</tr>
+<tr>
+<td>响应体：</td>
+</tr>
+</tbody></table>
+<p>2.http状态码介绍</p>
+<table>
+<thead>
+<tr>
+<th align="left">状态码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">200</td>
+<td>请求成功</td>
+</tr>
+<tr>
+<td align="left">307</td>
+<td>重定向—改变请求方向</td>
+</tr>
+<tr>
+<td align="left">400</td>
+<td>错误的请求，请求地址或者参数有误</td>
+</tr>
+<tr>
+<td align="left">404</td>
+<td>请求资源在服务器不存在</td>
+</tr>
+<tr>
+<td align="left">500</td>
+<td>服务器内部源代码出现错误</td>
+</tr>
+</tbody></table>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
 </search>

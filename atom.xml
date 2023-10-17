@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-09T14:43:57.704Z</updated>
+  <updated>2023-10-17T15:24:56.099Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>http状态码介绍</title>
+    <link href="http://example.com/2023/10/17/python%E5%BC%80%E5%8F%91/"/>
+    <id>http://example.com/2023/10/17/python%E5%BC%80%E5%8F%91/</id>
+    <published>2023-10-17T15:22:26.000Z</published>
+    <updated>2023-10-17T15:24:56.099Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1.一个http响应报文是由响应行，响应头，空行和响应体4个部分组成&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;http响应报文介绍&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;响应行：&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;响</summary>
+      
+    
+    
+    
+    
+    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>About Me</title>
