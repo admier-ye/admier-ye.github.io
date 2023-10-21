@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-17T15:24:56.099Z</updated>
+  <updated>2023-10-21T12:34:58.845Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于jenkins+k8s+Git+Harbor等技术构建企业级DevOps容器云平台</title>
+    <link href="http://example.com/2023/10/19/%E5%9F%BA%E4%BA%8Ejenkins-k8s-Git-Harbor%E7%AD%89%E6%8A%80%E6%9C%AF%E6%9E%84%E5%BB%BA%E4%BC%81%E4%B8%9A%E7%BA%A7DevOps%E5%AE%B9%E5%99%A8%E4%BA%91%E5%B9%B3%E5%8F%B0/"/>
+    <id>http://example.com/2023/10/19/%E5%9F%BA%E4%BA%8Ejenkins-k8s-Git-Harbor%E7%AD%89%E6%8A%80%E6%9C%AF%E6%9E%84%E5%BB%BA%E4%BC%81%E4%B8%9A%E7%BA%A7DevOps%E5%AE%B9%E5%99%A8%E4%BA%91%E5%B9%B3%E5%8F%B0/</id>
+    <published>2023-10-19T15:33:11.000Z</published>
+    <updated>2023-10-21T12:34:58.845Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-搭建环境：&quot;&gt;&lt;a href=&quot;#1-搭建环境：&quot; class=&quot;headerlink&quot; title=&quot;1.搭建环境：&quot;&gt;&lt;/a&gt;1.搭建环境：&lt;/h1&gt;&lt;p&gt;​	k8s集群版本是1.20.6&lt;/p&gt;
+&lt;p&gt;​	jekins版本是2.401&lt;/p&gt;
+&lt;p&gt;k8</summary>
+      
+    
+    
+    
+    
+    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="devops" scheme="http://example.com/tags/devops/"/>
+    
+  </entry>
   
   <entry>
     <title>http状态码介绍</title>

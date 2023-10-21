@@ -94,4 +94,65 @@
         <tag>python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>基于jenkins+k8s+Git+Harbor等技术构建企业级DevOps容器云平台</title>
+    <url>/2023/10/19/%E5%9F%BA%E4%BA%8Ejenkins-k8s-Git-Harbor%E7%AD%89%E6%8A%80%E6%9C%AF%E6%9E%84%E5%BB%BA%E4%BC%81%E4%B8%9A%E7%BA%A7DevOps%E5%AE%B9%E5%99%A8%E4%BA%91%E5%B9%B3%E5%8F%B0/</url>
+    <content><![CDATA[<h1 id="1-搭建环境："><a href="#1-搭建环境：" class="headerlink" title="1.搭建环境："></a>1.搭建环境：</h1><p>​	k8s集群版本是1.20.6</p>
+<p>​	jekins版本是2.401</p>
+<p>k8s环境：</p>
+<p>​	</p>
+<table>
+<thead>
+<tr>
+<th align="center">k8s节点</th>
+<th align="center">ip&#x2F;主机名</th>
+<th align="center">配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">控制节点master1</td>
+<td align="center">192.168.1.170</td>
+<td align="center">4c4g 40GB</td>
+</tr>
+<tr>
+<td align="center">工作节点node1</td>
+<td align="center">192.168.1.171</td>
+<td align="center">4c4g 40GB</td>
+</tr>
+<tr>
+<td align="center">工作节点node2</td>
+<td align="center">192.168.1.172</td>
+<td align="center">4c4g 40GB</td>
+</tr>
+<tr>
+<td align="center">私有仓库habor</td>
+<td align="center">192.168.1.173</td>
+<td align="center">4c4g 40GB</td>
+</tr>
+</tbody></table>
+<h1 id="2-安装Jenkins"><a href="#2-安装Jenkins" class="headerlink" title="2.安装Jenkins"></a>2.安装Jenkins</h1><h2 id="2-1安装nfs服务，可以选择任一台机器"><a href="#2-1安装nfs服务，可以选择任一台机器" class="headerlink" title="2.1安装nfs服务，可以选择任一台机器"></a>2.1安装nfs服务，可以选择任一台机器</h2><ul>
+<li>重点：最好所有机器都安装nfs客户端，不然后面部署会出错，导致持有卷挂载失败</li>
+<li>按照以下命令执行安装即可，[root@master1 jenkins]#  yum install nfs-utils -y</li>
+<li>其他节点同样的命令执行安装</li>
+<li>启动nfs服务，systemctl start nfs</li>
+<li>将nfs设置成开机自启 systemctl enable nfs</li>
+</ul>
+<h2 id="2-2创建一个nfs共享目录"><a href="#2-2创建一个nfs共享目录" class="headerlink" title="2.2创建一个nfs共享目录"></a>2.2创建一个nfs共享目录</h2><ul>
+<li>[root@master1 jenkins]# mkdir &#x2F;data&#x2F;v2</li>
+<li>[root@master1 jenkins]# vi &#x2F;etc&#x2F;exports   加入配置文件中</li>
+<li>&#x2F;data&#x2F;v2 192.168.1.0&#x2F;24(rw,no_root_squash)  这里面是相关权限</li>
+<li>运行exportsfs -arv  ，使配置文件生效</li>
+</ul>
+<h2 id="2-3在k8s集群中部署jenkins"><a href="#2-3在k8s集群中部署jenkins" class="headerlink" title="2.3在k8s集群中部署jenkins"></a>2.3在k8s集群中部署jenkins</h2><h3 id="2-3-1创建名称空间"><a href="#2-3-1创建名称空间" class="headerlink" title="2.3.1创建名称空间"></a>2.3.1创建名称空间</h3><h3 id="2-3-2创建pv"><a href="#2-3-2创建pv" class="headerlink" title="2.3.2创建pv"></a>2.3.2创建pv</h3><h3 id="2-3-3创建pvc"><a href="#2-3-3创建pvc" class="headerlink" title="2.3.3创建pvc"></a>2.3.3创建pvc</h3><h3 id="2-3-4创建一个sa账号"><a href="#2-3-4创建一个sa账号" class="headerlink" title="2.3.4创建一个sa账号"></a>2.3.4创建一个sa账号</h3><h3 id="2-3-5给sa账号进行rbac授权"><a href="#2-3-5给sa账号进行rbac授权" class="headerlink" title="2.3.5给sa账号进行rbac授权"></a>2.3.5给sa账号进行rbac授权</h3><h3 id="2-3-6通过deployment部署jenkins"><a href="#2-3-6通过deployment部署jenkins" class="headerlink" title="2.3.6通过deployment部署jenkins"></a>2.3.6通过deployment部署jenkins</h3><h3 id="2-3-7注意事项："><a href="#2-3-7注意事项：" class="headerlink" title="2.3.7注意事项："></a>2.3.7注意事项：</h3><p>​		部署未成功，可能是权限不够，需要进行授权： chown -R 1000.1000 &#x2F;data&#x2F;v2</p>
+<h3 id="2-3-8jenkins前端加上servcie服务，提供外部网络访问"><a href="#2-3-8jenkins前端加上servcie服务，提供外部网络访问" class="headerlink" title="2.3.8jenkins前端加上servcie服务，提供外部网络访问"></a>2.3.8jenkins前端加上servcie服务，提供外部网络访问</h3><p>* </p>
+<h2 id="2-4配置jenkins"><a href="#2-4配置jenkins" class="headerlink" title="2.4配置jenkins"></a>2.4配置jenkins</h2><ul>
+<li>在浏览器的访问jenkins界面：<a href="http://192.168.1.170:30002/">http://192.168.1.170:30002</a></li>
+<li><img src="C:\Users\xiaoy\AppData\Roaming\Typora\typora-user-images\image-20231021203441553.png" alt="image-20231021203441553"></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+        <tag>devops</tag>
+      </tags>
+  </entry>
 </search>
