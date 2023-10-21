@@ -142,6 +142,10 @@
 <li>在浏览器的访问jenkins界面：<a href="http://192.168.1.170:30002/">http://192.168.1.170:30002</a></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>devops</category>
+        <category>python</category>
+      </categories>
       <tags>
         <tag>技术</tag>
         <tag>devops</tag>
