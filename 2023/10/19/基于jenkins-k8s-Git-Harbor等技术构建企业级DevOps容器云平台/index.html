@@ -87,7 +87,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">697</span>
+            <span class="post-count">1k</span>
         </span>
     </span>
 
@@ -96,7 +96,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">3 min</span>
+            <span class="post-count">4 min</span>
         </span>
     </span>
 </div>
@@ -167,26 +167,53 @@
 <h2 id="2-4配置jenkins"><a href="#2-4配置jenkins" class="headerlink" title="2.4配置jenkins"></a>2.4配置jenkins</h2><ul>
 <li>在浏览器的访问jenkins界面：<a target="_blank" rel="noopener" href="http://192.168.1.170:30002/">http://192.168.1.170:30002</a></li>
 </ul>
-<h1 id="3-git的安装"><a href="#3-git的安装" class="headerlink" title="3.git的安装"></a>3.git的安装</h1><p>3.1安装git   yum install git      查看版本git –version</p>
-<p>3.2创建git账号： useradd git    passwd git</p>
-<p>3.3进入git并初始化仓库  su - git     mkdir创建仓库demo.git，cd进入执行git –bare init初始化</p>
-<p>3.4至此，git服务器已经搭建完成 </p>
-<p>3.5git简单使用：在任意机器安装 git   git clone  用户@192.168.1.173：&#x2F;home&#x2F;git&#x2F;demo.git   会提示是个空仓库</p>
+<h1 id="3-git的安装"><a href="#3-git的安装" class="headerlink" title="3.git的安装"></a>3.git的安装</h1><p>3.1 安装git   yum install git      查看版本git –version</p>
+<p>3.2 创建git账号： useradd git    passwd git</p>
+<p>3.3 进入git并初始化仓库  su - git     mkdir创建仓库demo.git，cd进入执行git –bare init初始化</p>
+<p>3.4 至此，git服务器已经搭建完成 </p>
+<p>3.5 git简单使用：在任意机器安装 git   </p>
+<p>​     执行此命令git clone  用户@192.168.1.173：&#x2F;home&#x2F;git&#x2F;demo.git   会提示是个空仓库</p>
 <p>​	提交代码：实例   touch 123    git add . (提交本路径所有代码)   git commit -m  ‘test’ (提交本地仓库)</p>
 <ul>
-<li>提交信息： git config –global user.email “<a href="mailto:&#x79;&#111;&#x75;&#x40;&#101;&#x78;&#x61;&#x6d;&#x70;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;">&#x79;&#111;&#x75;&#x40;&#101;&#x78;&#x61;&#x6d;&#x70;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;</a>“</li>
-<li>​                    git config –global user.name “your Nmae”</li>
-<li>git push origin master  推送到master分支</li>
+<li>提交信息： git config –global user.email “<a href="mailto:&#x79;&#x6f;&#117;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;">&#x79;&#x6f;&#117;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;</a>“</li>
+<li>​                     git config –global user.name “your Nmae”</li>
+<li>git push origin master  推送到master分支·</li>
 </ul>
 <p>3.6 免交互拉取：</p>
 <ul>
 <li>生成密钥对 ssh-keygen, 一路回车</li>
 <li>会在.ssh文件夹中生成id_rsa私钥，和id_rsa_pub公钥</li>
-<li>然后将公钥拷贝到git服务器中去， ssh-copy-id <a href="mailto:&#103;&#x69;&#116;&#x40;&#49;&#x39;&#x32;&#x2e;&#x31;&#54;&#x38;&#x2e;&#49;&#46;&#x31;&#55;&#51;">&#103;&#x69;&#116;&#x40;&#49;&#x39;&#x32;&#x2e;&#x31;&#54;&#x38;&#x2e;&#49;&#46;&#x31;&#55;&#51;</a>    默认保存在git服务器文件下</li>
+<li>然后将公钥拷贝到git服务器中去， ssh-copy-id <a href="mailto:&#103;&#105;&#116;&#x40;&#49;&#x39;&#50;&#46;&#49;&#54;&#56;&#46;&#49;&#x2e;&#49;&#x37;&#51;">&#103;&#105;&#116;&#x40;&#49;&#x39;&#50;&#46;&#49;&#54;&#56;&#46;&#49;&#x2e;&#49;&#x37;&#51;</a>    默认保存在git服务器文件下</li>
+<li>ssh <a href="mailto:&#103;&#x69;&#116;&#64;&#x31;&#57;&#50;&#x2e;&#49;&#54;&#56;&#x2e;&#x31;&#x2e;&#49;&#55;&#51;">&#103;&#x69;&#116;&#64;&#x31;&#57;&#50;&#x2e;&#49;&#54;&#56;&#x2e;&#x31;&#x2e;&#49;&#55;&#51;</a>   进行测试验证</li>
 </ul>
-<p>3.7  拉取代码 git clone  <a href="mailto:&#103;&#x69;&#116;&#x40;&#x31;&#57;&#50;&#x2e;&#x31;&#54;&#56;&#x2e;&#49;&#x2e;&#49;&#55;&#51;">&#103;&#x69;&#116;&#x40;&#x31;&#57;&#50;&#x2e;&#x31;&#54;&#56;&#x2e;&#49;&#x2e;&#49;&#55;&#51;</a>:&#x2F;home&#x2F;git&#x2F;demo.git</p>
+<p>3.7  拉取代码 git clone  <a href="mailto:&#103;&#x69;&#x74;&#64;&#49;&#x39;&#x32;&#46;&#49;&#54;&#56;&#46;&#49;&#46;&#x31;&#x37;&#51;">&#103;&#x69;&#x74;&#64;&#49;&#x39;&#x32;&#46;&#49;&#54;&#56;&#46;&#49;&#46;&#x31;&#x37;&#51;</a>:&#x2F;home&#x2F;git&#x2F;demo.git</p>
 <p>3.8如果其他开发者也需要认证，同样生成密钥对，只需将要公钥放在 .ssh&#x2F; 下面的authorized_keys中</p>
-<h1 id="4-harbor的安装"><a href="#4-harbor的安装" class="headerlink" title="4.harbor的安装"></a>4.harbor的安装</h1> 
+<h1 id="4-harbor的安装"><a href="#4-harbor的安装" class="headerlink" title="4.harbor的安装"></a>4.harbor的安装</h1><ul>
+<li>安装harbor的前提下，需要安装docker  ee   和安装docker  compose</li>
+<li>harbor异常被关： docker compose  up -d</li>
+<li>查看仓库地址 cat .git&#x2F;config</li>
+</ul>
+<p>4.1 下载离线安装包：<a target="_blank" rel="noopener" href="https://github.com/goharbor/harbor/releases">https://github.com/goharbor/harbor/releases</a>   offline版本</p>
+<p>4.2  压缩包进行解压  tar -zxvf harbor-offline-installer-v2.7.3.tgz</p>
+<p>4.3  进行配置文件，修改访问地址  vi  harbor.yml</p>
+<ul>
+<li>hostname &#x3D; 192.168.1.173</li>
+<li>harbor_admin_password &#x3D; Harbor123456</li>
+</ul>
+<p>4.4 准备配置：执行脚本sh prepare      导入镜像并启动：sh install.sh</p>
+<p>4.5安装harbor的前提下，需要安装docker  ee   和安装docker  compose</p>
+<h1 id="5-根据项目环境构建jenkins-Slave镜像，基于java"><a href="#5-根据项目环境构建jenkins-Slave镜像，基于java" class="headerlink" title="5.根据项目环境构建jenkins-Slave镜像，基于java"></a>5.根据项目环境构建jenkins-Slave镜像，基于java</h1><ul>
+<li>镜像构建 docker build -t 192.168.1.173&#x2F;library&#x2F;jenkins-slave-jdk:1.8 . (指定dockerfile路径)<ul>
+<li>Successfully built f30c9b9b19c2<br>Successfully tagged 192.168.1.173&#x2F;library&#x2F;jenkins-slave-jdk:1.8</li>
+</ul>
+</li>
+<li>配置信任http  vi &#x2F;etc&#x2F;docker&#x2F;daemon.json 加上   “insecure-registries”: [“192.168.1.173”] </li>
+<li>进行登录harbor服务器  docker  login 192.168.1.173   （验证测试）</li>
+<li>进行推送  docker push 192.168.1.173&#x2F;library&#x2F;jenkins-slave-jdk:1.8</li>
+</ul>
+<h1 id="6-jenkins-Piepline搭建与使用"><a href="#6-jenkins-Piepline搭建与使用" class="headerlink" title="6.jenkins Piepline搭建与使用"></a>6.jenkins Piepline搭建与使用</h1><p>6.1 简介：jenkins pipeline是一套插件，支持在jenkins中实现集成和持续交付管道</p>
+<p>6.2 </p>
+ 
       <!-- reward -->
       
       <div id="reword-out">
