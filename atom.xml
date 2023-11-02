@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-24T13:06:52.927Z</updated>
+  <updated>2023-11-02T14:17:03.429Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>前端代码如何构建</title>
+    <link href="http://example.com/2023/11/01/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA/"/>
+    <id>http://example.com/2023/11/01/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA/</id>
+    <published>2023-10-31T16:07:53.000Z</published>
+    <updated>2023-11-02T14:17:03.429Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-构建前端环境-node，npm&quot;&gt;&lt;a href=&quot;#1-构建前端环境-node，npm&quot; class=&quot;headerlink&quot; title=&quot;1.构建前端环境 node，npm&quot;&gt;&lt;/a&gt;1.构建前端环境 node，npm&lt;/h1&gt;&lt;p&gt;sudo apt-g</summary>
+      
+    
+    
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>基于jenkins+k8s+Git+Harbor等技术构建企业级DevOps容器云平台</title>
     <link href="http://example.com/2023/10/19/%E5%9F%BA%E4%BA%8Ejenkins-k8s-Git-Harbor%E7%AD%89%E6%8A%80%E6%9C%AF%E6%9E%84%E5%BB%BA%E4%BC%81%E4%B8%9A%E7%BA%A7DevOps%E5%AE%B9%E5%99%A8%E4%BA%91%E5%B9%B3%E5%8F%B0/"/>
     <id>http://example.com/2023/10/19/%E5%9F%BA%E4%BA%8Ejenkins-k8s-Git-Harbor%E7%AD%89%E6%8A%80%E6%9C%AF%E6%9E%84%E5%BB%BA%E4%BC%81%E4%B8%9A%E7%BA%A7DevOps%E5%AE%B9%E5%99%A8%E4%BA%91%E5%B9%B3%E5%8F%B0/</id>
     <published>2023-10-19T15:33:11.000Z</published>
-    <updated>2023-10-24T13:06:52.927Z</updated>
+    <updated>2023-10-31T15:58:45.132Z</updated>
     
     
       
@@ -46,8 +66,8 @@
   
   <entry>
     <title>http状态码介绍</title>
-    <link href="http://example.com/2023/10/17/python%E5%BC%80%E5%8F%91/"/>
-    <id>http://example.com/2023/10/17/python%E5%BC%80%E5%8F%91/</id>
+    <link href="http://example.com/2023/10/17/python%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81%E7%A0%81/"/>
+    <id>http://example.com/2023/10/17/python%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81%E7%A0%81/</id>
     <published>2023-10-17T15:22:26.000Z</published>
     <updated>2023-10-17T15:24:56.099Z</updated>
     
@@ -82,14 +102,14 @@
     <link href="http://example.com/2023/10/09/About%20Me/"/>
     <id>http://example.com/2023/10/09/About%20Me/</id>
     <published>2023-10-09T14:43:22.000Z</published>
-    <updated>2023-10-09T14:43:57.704Z</updated>
+    <updated>2023-10-31T16:02:32.058Z</updated>
     
     
       
       
     <summary type="html">&lt;p&gt;姓名：小柯&lt;/p&gt;
 &lt;p&gt;现居：深圳&lt;/p&gt;
-&lt;p&gt;邮箱：&lt;a href=&quot;mailto:&amp;#x31;&amp;#48;&amp;#49;&amp;#x32;&amp;#49;&amp;#52;&amp;#51;&amp;#55;&amp;#53;&amp;#54;&amp;#x40;&amp;#x71;&amp;#x71;&amp;#46;&amp;#99;&amp;#x6f;&amp;#x6d;</summary>
+&lt;p&gt;邮箱：&lt;a href=&quot;mailto:&amp;#49;&amp;#x30;&amp;#49;&amp;#x32;&amp;#x31;&amp;#52;&amp;#x33;&amp;#x37;&amp;#x35;&amp;#x36;&amp;#64;&amp;#113;&amp;#113;&amp;#x2e;&amp;#99;&amp;#111;&amp;</summary>
       
     
     

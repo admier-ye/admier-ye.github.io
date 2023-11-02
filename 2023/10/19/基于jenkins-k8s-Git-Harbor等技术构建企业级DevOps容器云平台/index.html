@@ -175,7 +175,7 @@
 <p>​     执行此命令git clone  用户@192.168.1.173：&#x2F;home&#x2F;git&#x2F;demo.git   会提示是个空仓库</p>
 <p>​	提交代码：实例   touch 123    git add . (提交本路径所有代码)   git commit -m  ‘test’ (提交本地仓库)</p>
 <ul>
-<li>提交信息： git config –global user.email “<a href="mailto:&#x79;&#x6f;&#117;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;">&#x79;&#x6f;&#117;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;</a>“</li>
+<li>提交信息： git config –global user.email “<a href="mailto:&#x79;&#111;&#x75;&#64;&#x65;&#x78;&#97;&#x6d;&#112;&#x6c;&#x65;&#46;&#x63;&#x6f;&#109;">&#x79;&#111;&#x75;&#64;&#x65;&#x78;&#97;&#x6d;&#112;&#x6c;&#x65;&#46;&#x63;&#x6f;&#109;</a>“</li>
 <li>​                     git config –global user.name “your Nmae”</li>
 <li>git push origin master  推送到master分支·</li>
 </ul>
@@ -183,10 +183,10 @@
 <ul>
 <li>生成密钥对 ssh-keygen, 一路回车</li>
 <li>会在.ssh文件夹中生成id_rsa私钥，和id_rsa_pub公钥</li>
-<li>然后将公钥拷贝到git服务器中去， ssh-copy-id <a href="mailto:&#103;&#105;&#116;&#x40;&#49;&#x39;&#50;&#46;&#49;&#54;&#56;&#46;&#49;&#x2e;&#49;&#x37;&#51;">&#103;&#105;&#116;&#x40;&#49;&#x39;&#50;&#46;&#49;&#54;&#56;&#46;&#49;&#x2e;&#49;&#x37;&#51;</a>    默认保存在git服务器文件下</li>
-<li>ssh <a href="mailto:&#103;&#x69;&#116;&#64;&#x31;&#57;&#50;&#x2e;&#49;&#54;&#56;&#x2e;&#x31;&#x2e;&#49;&#55;&#51;">&#103;&#x69;&#116;&#64;&#x31;&#57;&#50;&#x2e;&#49;&#54;&#56;&#x2e;&#x31;&#x2e;&#49;&#55;&#51;</a>   进行测试验证</li>
+<li>然后将公钥拷贝到git服务器中去， ssh-copy-id <a href="mailto:&#x67;&#105;&#116;&#64;&#49;&#57;&#50;&#46;&#49;&#54;&#x38;&#46;&#49;&#46;&#x31;&#x37;&#x33;">&#x67;&#105;&#116;&#64;&#49;&#57;&#50;&#46;&#49;&#54;&#x38;&#46;&#49;&#46;&#x31;&#x37;&#x33;</a>    默认保存在git服务器文件下</li>
+<li>ssh <a href="mailto:&#x67;&#x69;&#116;&#64;&#x31;&#57;&#50;&#46;&#x31;&#x36;&#56;&#x2e;&#49;&#x2e;&#x31;&#55;&#51;">&#x67;&#x69;&#116;&#64;&#x31;&#57;&#50;&#46;&#x31;&#x36;&#56;&#x2e;&#49;&#x2e;&#x31;&#55;&#51;</a>   进行测试验证</li>
 </ul>
-<p>3.7  拉取代码 git clone  <a href="mailto:&#103;&#x69;&#x74;&#64;&#49;&#x39;&#x32;&#46;&#49;&#54;&#56;&#46;&#49;&#46;&#x31;&#x37;&#51;">&#103;&#x69;&#x74;&#64;&#49;&#x39;&#x32;&#46;&#49;&#54;&#56;&#46;&#49;&#46;&#x31;&#x37;&#51;</a>:&#x2F;home&#x2F;git&#x2F;demo.git</p>
+<p>3.7  拉取代码 git clone  <a href="mailto:&#103;&#105;&#116;&#x40;&#x31;&#x39;&#x32;&#x2e;&#49;&#x36;&#x38;&#x2e;&#49;&#x2e;&#49;&#55;&#x33;">&#103;&#105;&#116;&#x40;&#x31;&#x39;&#x32;&#x2e;&#49;&#x36;&#x38;&#x2e;&#49;&#x2e;&#49;&#55;&#x33;</a>:&#x2F;home&#x2F;git&#x2F;demo.git</p>
 <p>3.8如果其他开发者也需要认证，同样生成密钥对，只需将要公钥放在 .ssh&#x2F; 下面的authorized_keys中</p>
 <h1 id="4-harbor的安装"><a href="#4-harbor的安装" class="headerlink" title="4.harbor的安装"></a>4.harbor的安装</h1><ul>
 <li>安装harbor的前提下，需要安装docker  ee   和安装docker  compose</li>
@@ -202,6 +202,10 @@
 </ul>
 <p>4.4 准备配置：执行脚本sh prepare      导入镜像并启动：sh install.sh</p>
 <p>4.5安装harbor的前提下，需要安装docker  ee   和安装docker  compose</p>
+<p>4.6 因为harbor是https  所以想要使用http需要配置信任</p>
+<ul>
+<li>配置信任http  vi &#x2F;etc&#x2F;docker&#x2F;daemon.json 加上   “insecure-registries”: [“192.168.1.173”]</li>
+</ul>
 <h1 id="5-根据项目环境构建jenkins-Slave镜像，基于java"><a href="#5-根据项目环境构建jenkins-Slave镜像，基于java" class="headerlink" title="5.根据项目环境构建jenkins-Slave镜像，基于java"></a>5.根据项目环境构建jenkins-Slave镜像，基于java</h1><ul>
 <li>镜像构建 docker build -t 192.168.1.173&#x2F;library&#x2F;jenkins-slave-jdk:1.8 . (指定dockerfile路径)<ul>
 <li>Successfully built f30c9b9b19c2<br>Successfully tagged 192.168.1.173&#x2F;library&#x2F;jenkins-slave-jdk:1.8</li>
@@ -209,7 +213,11 @@
 </li>
 <li>配置信任http  vi &#x2F;etc&#x2F;docker&#x2F;daemon.json 加上   “insecure-registries”: [“192.168.1.173”] </li>
 <li>进行登录harbor服务器  docker  login 192.168.1.173   （验证测试）</li>
-<li>进行推送  docker push 192.168.1.173&#x2F;library&#x2F;jenkins-slave-jdk:1.8</li>
+<li>进行推送  docker push 192.168.1.173&#x2F;library&#x2F;jenkins-slave-jdk:1.8 </li>
+<li>配置加速：cat &#x2F;etc&#x2F;docker&#x2F;daemon.json<ul>
+<li>{“registry-mirrors”: [“<a target="_blank" rel="noopener" href="http://f1361db2.m.daoclound.io"]}">http://f1361db2.m.daoclound.io&quot;]}</a></li>
+</ul>
+</li>
 </ul>
 <h1 id="6-jenkins-Piepline搭建与使用"><a href="#6-jenkins-Piepline搭建与使用" class="headerlink" title="6.jenkins Piepline搭建与使用"></a>6.jenkins Piepline搭建与使用</h1><p>6.1 简介：jenkins pipeline是一套插件，支持在jenkins中实现集成和持续交付管道</p>
 <p>6.2 </p>
@@ -296,8 +304,17 @@
    
   <nav class="article-nav">
     
+      <a href="/2023/11/01/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            前端代码如何构建
+          
+        </div>
+      </a>
     
-      <a href="/2023/10/17/python%E5%BC%80%E5%8F%91/" class="article-nav-link">
+    
+      <a href="/2023/10/17/python%E5%BC%80%E5%8F%91%E7%8A%B6%E6%80%81%E7%A0%81/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
         <div class="article-nav-title">http状态码介绍</div>
       </a>
