@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-02T14:22:20.232Z</updated>
+  <updated>2023-11-09T15:46:38.100Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>“conda虚拟环境部署</title>
+    <link href="http://example.com/2023/11/09/conda%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
+    <id>http://example.com/2023/11/09/conda%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</id>
+    <published>2023-11-09T15:45:25.000Z</published>
+    <updated>2023-11-09T15:46:38.100Z</updated>
+    
+    
+    
+    
+    <category term="python项目部署" scheme="http://example.com/categories/python%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>前端代码如何构建</title>
