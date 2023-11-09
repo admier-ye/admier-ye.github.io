@@ -135,11 +135,11 @@
   </entry>
   
   <entry>
-    <title>MysQL相关</title>
+    <title>Mysql相关</title>
     <link href="http://example.com/2023/10/05/MySql%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     <id>http://example.com/2023/10/05/MySql%E6%95%B0%E6%8D%AE%E5%BA%93/</id>
     <published>2023-10-05T12:54:49.000Z</published>
-    <updated>2023-10-16T16:07:41.986Z</updated>
+    <updated>2023-11-05T16:02:40.335Z</updated>
     
     
     
@@ -148,8 +148,6 @@
     
     
     <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="旅行" scheme="http://example.com/tags/%E6%97%85%E8%A1%8C/"/>
     
   </entry>
   
