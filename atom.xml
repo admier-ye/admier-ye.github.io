@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-09T15:54:48.630Z</updated>
+  <updated>2023-11-11T06:53:15.112Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tmux的基本用法</title>
+    <link href="http://example.com/2023/11/11/tmux%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/"/>
+    <id>http://example.com/2023/11/11/tmux%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</id>
+    <published>2023-11-11T06:53:15.000Z</published>
+    <updated>2023-11-11T06:53:15.112Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>conda虚拟环境部署</title>
@@ -156,7 +169,7 @@
     <link href="http://example.com/2023/10/05/MySql%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     <id>http://example.com/2023/10/05/MySql%E6%95%B0%E6%8D%AE%E5%BA%93/</id>
     <published>2023-10-05T12:54:49.000Z</published>
-    <updated>2023-11-05T16:02:40.335Z</updated>
+    <updated>2023-11-11T14:07:36.198Z</updated>
     
     
     
@@ -165,6 +178,8 @@
     
     
     <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="旅行" scheme="http://example.com/tags/%E6%97%85%E8%A1%8C/"/>
     
   </entry>
   
