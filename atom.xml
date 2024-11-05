@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-11T06:53:15.112Z</updated>
+  <updated>2024-11-05T14:17:06.895Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pycharm推送和拉取代码</title>
+    <link href="http://example.com/2024/11/05/pycharm%E6%8E%A8%E9%80%81%E5%92%8C%E6%8B%89%E5%8F%96%E4%BB%A3%E7%A0%81/"/>
+    <id>http://example.com/2024/11/05/pycharm%E6%8E%A8%E9%80%81%E5%92%8C%E6%8B%89%E5%8F%96%E4%BB%A3%E7%A0%81/</id>
+    <published>2024-11-04T16:00:26.000Z</published>
+    <updated>2024-11-05T14:17:06.895Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-安装pycharm并创建项目&quot;&gt;&lt;a href=&quot;#1-安装pycharm并创建项目&quot; class=&quot;headerlink&quot; title=&quot;1.安装pycharm并创建项目&quot;&gt;&lt;/a&gt;1.安装pycharm并创建项目&lt;/h1&gt;&lt;h2 id=&quot;1-1社区版和专业</summary>
+      
+    
+    
+    
+    <category term="py开发" scheme="http://example.com/categories/py%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="py开发" scheme="http://example.com/tags/py%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
   
   <entry>
     <title>tmux的基本用法</title>
@@ -73,7 +95,7 @@
     <link href="http://example.com/2023/10/19/%E5%9F%BA%E4%BA%8Ejenkins-k8s-Git-Harbor%E7%AD%89%E6%8A%80%E6%9C%AF%E6%9E%84%E5%BB%BA%E4%BC%81%E4%B8%9A%E7%BA%A7DevOps%E5%AE%B9%E5%99%A8%E4%BA%91%E5%B9%B3%E5%8F%B0/"/>
     <id>http://example.com/2023/10/19/%E5%9F%BA%E4%BA%8Ejenkins-k8s-Git-Harbor%E7%AD%89%E6%8A%80%E6%9C%AF%E6%9E%84%E5%BB%BA%E4%BC%81%E4%B8%9A%E7%BA%A7DevOps%E5%AE%B9%E5%99%A8%E4%BA%91%E5%B9%B3%E5%8F%B0/</id>
     <published>2023-10-19T15:33:11.000Z</published>
-    <updated>2023-10-31T15:58:45.132Z</updated>
+    <updated>2024-11-04T16:11:20.679Z</updated>
     
     
       
@@ -86,8 +108,6 @@
     
     
     <category term="devops" scheme="http://example.com/categories/devops/"/>
-    
-    <category term="python" scheme="http://example.com/categories/devops/python/"/>
     
     
     <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
@@ -141,7 +161,7 @@
       
     <summary type="html">&lt;p&gt;姓名：小柯&lt;/p&gt;
 &lt;p&gt;现居：深圳&lt;/p&gt;
-&lt;p&gt;邮箱：&lt;a href=&quot;mailto:&amp;#49;&amp;#x30;&amp;#49;&amp;#x32;&amp;#x31;&amp;#52;&amp;#x33;&amp;#x37;&amp;#x35;&amp;#x36;&amp;#64;&amp;#113;&amp;#113;&amp;#x2e;&amp;#99;&amp;#111;&amp;</summary>
+&lt;p&gt;邮箱：&lt;a href=&quot;mailto:&amp;#x31;&amp;#x30;&amp;#x31;&amp;#x32;&amp;#49;&amp;#52;&amp;#x33;&amp;#55;&amp;#x35;&amp;#54;&amp;#64;&amp;#113;&amp;#113;&amp;#46;&amp;#99;&amp;#111;&amp;#1</summary>
       
     
     
